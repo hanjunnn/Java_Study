@@ -21,5 +21,10 @@ public class VariablesDemo {
         a = "coding";
         b = "everybody";
         System.out.println(a+b);
+
+        //변수를 사용하는 이유
+        //중복의 제거
+        //가독성
+        //유지보수
     }
 }
