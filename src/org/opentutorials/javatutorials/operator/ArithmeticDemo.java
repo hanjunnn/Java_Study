@@ -67,5 +67,35 @@ public class ArithmeticDemo {
         //비교연산자
         //==(같다), !=(다르다), >(크다), <(작다), >=(크거나 같다), <=(작거나 같다)
         //.equals()는 문자열을 비교할 때 사용하는 메소드
+    
+        //조건문
+        if (true) {
+            System.out.println("result : true");
+            //true일 때 실행
+        }
+        if(true){
+            System.out.println(1);
+            System.out.println(2);
+            System.out.println(3);
+            System.out.println(4);
+        }
+        System.out.println(5);
+
+        //else
+        if (true) {
+            System.out.println(1);
+        } else {
+            System.out.println(2);
+        }
+        if (false) {
+            System.out.println(1);
+        } else if (true) {
+            System.out.println(2);
+        } else if (true){
+            System.out.println(3);
+        }
+        else {
+            System.out.println(4);
+        }
     }
 }
