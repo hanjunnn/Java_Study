@@ -46,8 +46,14 @@ public class VariablesDemo {
         //자동 형변환
         //작은 데이터 타입에서 큰 데이터 타입으로 변환할 때 자동으로 형변환이 일어남
         //타입을 변경해도 데이터 손실이 없는 경우에만 일어남
-        int a = 3;
-        float b = 1.0F;
-        double c = a+b;
+        // int a = 3;
+        // float b = 1.0F;
+        // double c = a+b;
+
+        //명시적 형변환
+        //자동 형변환이 일어나지 않는 경우에는 명시적으로 형변환을 해야함
+        //이를 explicit conversion이라고 함
+        float a = (float)100.0;
+        int b = (int)100.0F;
     }
 }
