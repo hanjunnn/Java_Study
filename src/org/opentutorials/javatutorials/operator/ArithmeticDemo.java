@@ -36,26 +36,30 @@ public class ArithmeticDemo {
         // System.out.println(thirdString);//This is a concatenated string.
 
         //연산자 형변환
-        int a = 10;
-        int b = 3;
+        // int a = 10;
+        // int b = 3;
 
-        float c = 10.0F;
-        float d = 3.0F;
+        // float c = 10.0F;
+        // float d = 3.0F;
 
-        System.out.println(a/b);//3
-        //정수끼리만 연산하면 결과도 정수로 나옴
-        System.out.println(c/d);//3.3333333
-        System.out.println(a/d);//3.3333333
-        //정수와 실수를 연산하면 결과는 실수로 나옴
+        // System.out.println(a/b);//3
+        // //정수끼리만 연산하면 결과도 정수로 나옴
+        // System.out.println(c/d);//3.3333333
+        // System.out.println(a/d);//3.3333333
+        // //정수와 실수를 연산하면 결과는 실수로 나옴
 
-        //단항 연산자
-        int i = 3;
-        i++;
-        System.out.println(i);//4
-        ++i;
-        System.out.println(i);//5
-        System.out.println(++i);//6
-        System.out.println(i++);//6
-        System.out.println(i);//7
+        // //단항 연산자
+        // int i = 3;
+        // i++;
+        // System.out.println(i);//4
+        // ++i;
+        // System.out.println(i);//5
+        // System.out.println(++i);//6
+        // System.out.println(i++);//6
+        // System.out.println(i);//7
+
+        //연산자 우선순위
+        int a = 4-3*6;
+        //곱셈이 먼저 계산되므로 4-18=-14
     }
 }
