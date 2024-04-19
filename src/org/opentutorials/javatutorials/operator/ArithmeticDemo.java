@@ -48,6 +48,14 @@ public class ArithmeticDemo {
         System.out.println(a/d);//3.3333333
         //정수와 실수를 연산하면 결과는 실수로 나옴
 
-        
+        //단항 연산자
+        int i = 3;
+        i++;
+        System.out.println(i);//4
+        ++i;
+        System.out.println(i);//5
+        System.out.println(++i);//6
+        System.out.println(i++);//6
+        System.out.println(i);//7
     }
 }
