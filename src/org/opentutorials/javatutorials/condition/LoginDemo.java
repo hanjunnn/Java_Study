@@ -8,14 +8,21 @@ public class LoginDemo {
         // } else {
         //     System.out.println("wrong");
         // }
+        // String id = "egoing";
+        // String password = "111111";
+        // if (id.equals("egoing")) {
+        //     if (password.equals("111111")) {
+        //         System.out.println("right");
+        //     } else {
+        //         System.out.println("wrong");
+        //     }
+        // } else {
+        //     System.out.println("wrong");
+        // }
         String id = "egoing";
         String password = "111111";
-        if (id.equals("egoing")) {
-            if (password.equals("111111")) {
-                System.out.println("right");
-            } else {
-                System.out.println("wrong");
-            }
+        if (id.equals("egoing") && password.equals("111111")) {
+            System.out.println("right");
         } else {
             System.out.println("wrong");
         }
