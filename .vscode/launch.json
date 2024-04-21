@@ -52,6 +52,14 @@
             "request": "launch",
             "mainClass": "org.opentutorials.javatutorials.variables.VariablesDemo",
             "projectName": "Java1_f2182804"
+        },
+        {
+            "type": "java",
+            "name": "InputForeachDemo",
+            "request": "launch",
+            "mainClass": "org.opentutorials.javatutorials.io.InputForeachDemo",
+            "projectName": "Java1_f2182804",
+            "args": ["one", "two", "three"]
         }
     ]
 }
