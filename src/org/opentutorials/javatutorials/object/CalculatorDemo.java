@@ -1,5 +1,8 @@
-package org.opentutorials.javatutorials.object;
-
+package org.opentutorials.javatutorials.object;// 패키지란 클래스의 위치를 가리키는 경로이다.
+//이름의 충돌을 방지하기 위해 사용한다.
+//src는 소스코드를 저장하는 디렉토리이다.
+//import는 다른 패키지에 있는 클래스를 사용하기 위해 사용한다.
+//import 패키지명.클래스명;
 class Calculator {// 클래스
     // static double PI = 3.14;//클래스 변수
     // static int base = 0;
