@@ -3,33 +3,40 @@ package org.opentutorials.javatutorials.object;
 class Calculator {//클래스
     // static double PI = 3.14;//클래스 변수
     // static int base = 0;
-    // int left, right;
-    // public void setOprands(int left, int right){
-    //     this.left = left;//인스턴스 변수
-    //     this.right = right;
-    // }
-    // public void sum(){
-    //     System.out.println(this.left+this.right+base);
-    // }
-    // public void avg(){
-    //     System.out.println((this.left+this.right)/2);
-    // }
-
-    public static void sum(int left, int right){
-        System.out.println(left+right);
+    int left, right;
+    public void setOprands(int left, int right){
+        this.left = left;//인스턴스 변수
+        this.right = right;
     }
-    public static void avg(int left, int right){
-        System.out.println((left+right)/2);
+    public void sum(){
+        System.out.println(this.left+this.right);
+    }
+    public void avg(){
+        System.out.println((this.left+this.right)/2);
+    }
+
+    // public static void sum(int left, int right){
+    //     System.out.println(left+right);
+    // }
+    // public static void avg(int left, int right){
+    //     System.out.println((left+right)/2);
+    // }
+}
+class SubstractionableCalculator extends Calculator{
+    public void substract(){
+        System.out.println(this.left - this.right);
     }
 }
 public class CalculatorDemo {
     public static void main(String[] args) {
         // Calculator c1 = new Calculator();//인스턴스화
-        // //데이터타입 변수명 = new 데이터타입();
+        //데이터타입 변수명 = new 데이터타입();
         // System.out.println(c1.PI);
-        // c1.setOprands(10, 20);
-        // c1.sum();
-        // c1.avg();
+        SubstractionableCalculator c1 = new SubstractionableCalculator();
+        c1.setOprands(10, 20);
+        c1.sum();
+        c1.avg();
+        c1.substract();
          
         // Calculator c2 = new Calculator();
         // System.out.println(c2.PI);
@@ -43,11 +50,11 @@ public class CalculatorDemo {
 
         // c1.sum();
         // c2.sum();
-        Calculator.sum(10, 20);
-        Calculator.avg(10, 20);
+        // Calculator.sum(10, 20);
+        // Calculator.avg(10, 20);
 
-        Calculator.sum(20, 40);
-        Calculator.avg(20, 40);
+        // Calculator.sum(20, 40);
+        // Calculator.avg(20, 40);
 
     }
     
