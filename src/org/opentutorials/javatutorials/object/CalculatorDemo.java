@@ -27,6 +27,16 @@ class SubstractionableCalculator extends Calculator{
         System.out.println(this.left - this.right);
     }
 }
+class MultiplicationableCalculator extends Calculator{
+    public void multiplication(){
+        System.out.println(this.left * this.right);
+    }
+}
+class DivisionableCalculator extends MultiplicationableCalculator{
+    public void division(){
+        System.out.println(this.left / this.right);
+    }
+}
 public class CalculatorDemo {
     public static void main(String[] args) {
         // Calculator c1 = new Calculator();//인스턴스화
@@ -37,6 +47,17 @@ public class CalculatorDemo {
         c1.sum();
         c1.avg();
         c1.substract();
+        MultiplicationableCalculator c2 = new MultiplicationableCalculator();
+        c2.setOprands(10, 20);
+        c2.sum();
+        c2.avg();
+        c2.multiplication();
+        DivisionableCalculator c3 = new DivisionableCalculator();
+        c3.setOprands(10, 20);
+        c3.sum();
+        c3.avg();
+        c3.multiplication();
+        c3.division();
          
         // Calculator c2 = new Calculator();
         // System.out.println(c2.PI);
