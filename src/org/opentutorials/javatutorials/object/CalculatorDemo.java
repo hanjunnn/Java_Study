@@ -16,8 +16,8 @@ class Calculator {//클래스
     public void sum(){
         System.out.println(this.left+this.right);
     }
-    public void avg(){
-        System.out.println((this.left+this.right)/2);
+    public int avg(){
+        return ((this.left+this.right)/2);
     }
 
     // public static void sum(int left, int right){
@@ -28,6 +28,14 @@ class Calculator {//클래스
     // }
 }
 class SubstractionableCalculator extends Calculator{
+    public void sum(){
+        System.out.println("실행결과는"+(this.left + this.right)+"입니다.");
+    }
+    //오버라이딩을 할시 부모 메소드의 형식을 따라야 한다.
+    //ex) 이름, 매개변수, 리턴타입 이를 통틀어 서명(signature)라고 한다.
+    public int avg(){
+        return super.avg();
+    }
     public SubstractionableCalculator(int left, int right){
         super(left, right);
         //초기화 코드는 super() 다음에 작성해야 한다.
