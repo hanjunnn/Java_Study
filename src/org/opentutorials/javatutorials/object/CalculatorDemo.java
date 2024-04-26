@@ -4,6 +4,11 @@ class Calculator {//클래스
     // static double PI = 3.14;//클래스 변수
     // static int base = 0;
     int left, right;
+    //public Calculator(){}//기본 생성자를 사용해야함
+    public Calculator(int left, int right){
+        this.left = left;
+        this.right = right;
+    }
     public void setOprands(int left, int right){
         this.left = left;//인스턴스 변수
         this.right = right;
@@ -23,41 +28,45 @@ class Calculator {//클래스
     // }
 }
 class SubstractionableCalculator extends Calculator{
+    public SubstractionableCalculator(int left, int right){
+        super(left, right);
+        //초기화 코드는 super() 다음에 작성해야 한다.
+    }
     public void substract(){
         System.out.println(this.left - this.right);
     }
 }
-class MultiplicationableCalculator extends Calculator{
-    public void multiplication(){
-        System.out.println(this.left * this.right);
-    }
-}
-class DivisionableCalculator extends MultiplicationableCalculator{
-    public void division(){
-        System.out.println(this.left / this.right);
-    }
-}
+// class MultiplicationableCalculator extends Calculator{
+//     public void multiplication(){
+//         System.out.println(this.left * this.right);
+//     }
+// }
+// class DivisionableCalculator extends MultiplicationableCalculator{
+//     public void division(){
+//         System.out.println(this.left / this.right);
+//     }
+// }
 public class CalculatorDemo {
     public static void main(String[] args) {
         // Calculator c1 = new Calculator();//인스턴스화
         //데이터타입 변수명 = new 데이터타입();
         // System.out.println(c1.PI);
-        SubstractionableCalculator c1 = new SubstractionableCalculator();
-        c1.setOprands(10, 20);
+        SubstractionableCalculator c1 = new SubstractionableCalculator(10,20);
+        //c1.setOprands(10, 20);
         c1.sum();
         c1.avg();
         c1.substract();
-        MultiplicationableCalculator c2 = new MultiplicationableCalculator();
-        c2.setOprands(10, 20);
-        c2.sum();
-        c2.avg();
-        c2.multiplication();
-        DivisionableCalculator c3 = new DivisionableCalculator();
-        c3.setOprands(10, 20);
-        c3.sum();
-        c3.avg();
-        c3.multiplication();
-        c3.division();
+        // MultiplicationableCalculator c2 = new MultiplicationableCalculator();
+        // c2.setOprands(10, 20);
+        // c2.sum();
+        // c2.avg();
+        // c2.multiplication();
+        // DivisionableCalculator c3 = new DivisionableCalculator();
+        // c3.setOprands(10, 20);
+        // c3.sum();
+        // c3.avg();
+        // c3.multiplication();
+        // c3.division();
          
         // Calculator c2 = new Calculator();
         // System.out.println(c2.PI);
