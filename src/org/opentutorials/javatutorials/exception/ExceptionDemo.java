@@ -17,6 +17,9 @@ class A {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBoundsException");
         } catch (Exception e) {
+            System.out.println("Exception");
+        } finally {
+            System.out.println("finally");
         }
     }
 }
@@ -25,5 +28,7 @@ public class ExceptionDemo {
     public static void main(String[] args) {
         A a = new A();
         a.z(10, 0);
+        a.z(1, 0);
+        a.z(2, 1);
     }
 }
